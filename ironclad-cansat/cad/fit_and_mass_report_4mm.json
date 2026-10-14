@@ -1,0 +1,15 @@
+{
+ "problems": [],
+ "mass": {
+  "frame_g_solid": 45.5,
+  "lid_g_solid": 12.3,
+  "tpu_ring_g_solid": 14.0,
+  "printed_total_g_solid": 71.8,
+  "v1_shell_and_decks_g_solid": 163.3
+ },
+ "volumes_mm3": {
+  "frame": 36664,
+  "lid": 9886,
+  "tpu": 11612
+ }
+}

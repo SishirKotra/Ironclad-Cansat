@@ -1,0 +1,7 @@
+{
+ "note": "Linear static FEA of the v2 frame (PLA, E=2300 MPa, nu=0.35), tetgen P1 tets ~0.4M, scikit-fem. Loads: frame self-weight + estimated deck masses (B 21 g, C 21 g, D 23 g, lid 12.3 g) x deceleration. Flat: whole base ring (r>=25 at z=8) fixed. Tilted: 30 deg, only an ~80 deg arc of base at +x fixed (conservative). Values = 99.9th percentile von Mises, excluding the base-support zone (z<16) for tilted. Printed PLA strength taken as ~30 MPa.",
+ "strut_3mm": {"flat_grass_144g": 4.9, "flat_hard_538g": 18.3, "tilted30_grass_144g": 34.6, "tilted30_hard_538g": 129.5, "printed_mass_g": 65.2},
+ "strut_4mm": {"flat_grass_144g": 2.6, "flat_hard_538g": 9.6, "tilted30_grass_144g": 15.3, "tilted30_hard_538g": 57.3, "printed_mass_g": 71.8},
+ "hotspot": "strut-to-ring junction at z=36 in tilted case",
+ "bug_found": "latch post was not connected to the frame; fixed (now x=-29, 3x6 mm, z 103-111, fused into top ring)"
+}
